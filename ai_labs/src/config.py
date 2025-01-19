@@ -17,9 +17,9 @@ COLLECTION_NAME = "help-center-articles"
 
 # Document Processing Configuration
 CHUNK_SIZE = 500
-CHUNK_OVERLAP = 0
+CHUNK_OVERLAP = 50
 BATCH_SIZE = 20
 
 # Data Paths
-DATA_DIR = Path("data")
-HC_ARTICLES_PATH = DATA_DIR / "cleaned_hc_articles.json"
+DATA_DIR = Path("AI_Labs/ai_labs/data/data")
+HC_ARTICLES_PATH = Path("ai_labs/data/cleaned_hc_articles.json")
