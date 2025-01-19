@@ -1,4 +1,4 @@
-# NordVPN Support Assistant
+# Customer Support Assistant
 
 A **Retrieval-Augmented Generation (RAG)** chatbot for providing support using NordVPN's Help Center documentation.
 
