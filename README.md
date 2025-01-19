@@ -26,7 +26,7 @@ poetry install
 1. Create a `.env` file in the project root.
 2. Add your OpenAI API key:
    ```env
-   OPENAI_API_KEY=your_openai_api_key_here
+   OPENAI_API_KEY = your_openai_api_key_here
    ```
 
 ## Database Initialization
