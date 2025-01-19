@@ -1,0 +1,60 @@
+[project]
+name = "ai-labs"
+version = "0.1.0"
+description = "NordVPN Support Assistant using RAG"
+authors = [
+    {name = "Ingrida Kazenaite",email = "kazenaite@yahoo.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "chromadb (>=0.6.3,<0.7.0)",
+    "openai (>=1.59.8,<2.0.0)",
+    "beautifulsoup4 (>=4.12.3,<5.0.0)",
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+ruff = "^0.8.6"
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["ALL"]
+# https://docs.astral.sh/ruff/rules
+ignore = [
+  "A",
+  "ANN101",
+  "ANN102",
+  "COM812",
+  "D",
+  "EM101",
+  "EM102",
+  "FA",
+  "FIX002",
+  "ISC001",
+  "PLR0913",
+  "PLR2004",
+  "PLW2901",
+  "S101",
+  "S311",
+  "S603",
+  "SIM117",
+  "TCH",
+  "TD002",
+  "TD004",
+  "TRY003",
+  "TRY300",
+  "G004",
+  "E501",
+]
+
+[tool.ruff.lint.pycodestyle]
+ignore-overlong-task-comments = true
