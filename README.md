@@ -1,41 +1,57 @@
-NordVPN Support Assistant
-A Retrieval-Augmented Generation (RAG) chatbot for providing support using NordVPN's Help Center documentation.
-Features
+# NordVPN Support Assistant
 
-Intelligent document retrieval using ChromaDB vector database
-Context-aware responses using OpenAI's GPT-3.5 Turbo
-Support for connectivity troubleshooting with country and device detection
-Conversation history management
-Comprehensive test suite for quality assurance
-Memory-efficient document processing
+A **Retrieval-Augmented Generation (RAG)** chatbot for providing support using NordVPN's Help Center documentation.
 
-Prerequisites
+## Features
 
-Python 3.9+
-Poetry (dependency management)
-OpenAI API Key
+- **Intelligent Document Retrieval**: Powered by ChromaDB vector database.
+- **Context-Aware Responses**: Utilizes OpenAI's GPT-3.5 Turbo for intelligent conversation.
+- **Troubleshooting Support**: Detects country and device for tailored connectivity solutions.
+- **Conversation History Management**: Maintains context for better assistance.
+- **Comprehensive Testing Suite**: Ensures high-quality performance.
+- **Memory-Efficient Document Processing**: Optimized for resource efficiency.
 
-Installation
+## Prerequisites
 
-Clone the repository:
+- Python 3.9+
+- Poetry (for dependency management)
+- OpenAI API Key
 
-bashCopygit clone https://github.com/your-username/ai_labs-support-assistant.git
+## Installation
+
+### Clone the Repository
+```bash
+git clone https://github.com/your-username/ai_labs-support-assistant.git
 cd nordvpn-support-assistant
+```
 
-Install dependencies:
-
+### Install Dependencies
+```bash
 poetry install
+```
 
-Set up environment variables:
+### Set Up Environment Variables
+1. Create a `.env` file in the project root.
+2. Add your OpenAI API key:
+   ```env
+   OPENAI_API_KEY=your_openai_api_key_here
+   ```
 
-Create a .env file in the project root
-Add your OpenAI API key:
+## Database Initialization
 
-OPENAI_API_KEY=your_openai_api_key_here
-
-Database Initialization
 Before running the assistant, initialize the ChromaDB with Help Center articles:
-bashCopypoetry run python scripts/initialize_db.py
+```bash
+poetry run python scripts/initialize_db.py
+```
 
-Running the Assistant
+## Running the Assistant
+
+To start the assistant, use:
+```bash
 poetry run python ai_labs/run.py
+```
+
+---
+
+With this setup, you’re ready to leverage the NordVPN Support Assistant for enhanced user support. For any questions or issues, feel free to raise an issue in the repository.
+
